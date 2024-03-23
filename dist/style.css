@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: mediumpurple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.container{
+    border: 5px solid grey;
+    border-radius: 40px;
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+
+  
+.chatmessages{
+    margin-bottom: 30px;
+    /* align-self: baseline; */
+    font-size:1.1rem;
+    font-family:fantasy;
+    overflow:auto;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.current-user {
+    background-color: #DCF8C6; 
+    align-self: flex-end;
+  }
+  
+  .other-user {
+    background-color: pink;
+    align-self: flex-start; 
+  }
+.message-container {
+    display: block;
+    max-width: 60%; 
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+.username{
+    color: grey;
+    font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.chatmessages::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(174, 51, 51, 0.3);
+	background-color: #F5F5F5;
+}
+
+.chatmessages::-webkit-scrollbar
+{
+	width: 1px;
+	background-color: #F5F5F5;
+}
+
+.chatmessages::-webkit-scrollbar-thumb
+{
+	background-color: #23cccc;
+	/* border: 1px solid #555555; */
+    border: none;
+    border-radius: 10px;
+}
+
+button{
+    background-color:grey;
+    padding:12px 30px;
+    border-radius: 20px;
+    border: none;
+}
+button:active{
+    transform: scale(0.9);
+    background-color:deepskyblue;
+}
+
+input{
+    padding: 10px 14px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 300px;
+}
+input::placeholder{
+    color: black;
+    font-size: 1.1rem;
+}
