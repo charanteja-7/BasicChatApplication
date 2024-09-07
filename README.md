@@ -1,4 +1,4 @@
- Basic Chat Application
+# Basic Chat Application
 
 ## Overview
 
